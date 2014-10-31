@@ -10,7 +10,7 @@ class Preguntas {
         //consulta en la bd el total de preguntas
         $pregExistentes = mysql_result($preg,0,'num');
         //iniciar vector en 0
-        for($r=0;$r<$num;$r++) $vector[$r]=0;
+        for($r=0;$r<$num;$r+++) $vector[$r]=0;
         for($r=0;$r<$num;$r++){
             //Almacenar en el vector las preguntas aleatoriamente
             $alea=rand(1,$pregExistentes);
@@ -20,7 +20,7 @@ class Preguntas {
                     $bandera=false;
                     break;
                 }
-            if(!$bandera){ $r--; continue; }
+            if(!$bandera){ $r-; continue; }
             $vector[$r]=$alea;
         }
         // carga de las preguntas
