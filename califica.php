@@ -15,24 +15,12 @@ $preg[] = (isset($_POST['preg3'])?$_POST['preg3']:NULL);
 $preg[] = (isset($_POST['preg4'])?$_POST['preg4']:NULL);
 $preg[] = (isset($_POST['preg5'])?$_POST['preg5']:NULL);
 $preg[] = (isset($_POST['preg6'])?$_POST['preg6']:NULL);
-/*
-$preg[] = (isset($_POST['preg7'])?$_POST['preg7']:NULL);
-$preg[] = (isset($_POST['preg8'])?$_POST['preg8']:NULL);
-$preg[] = (isset($_POST['preg9'])?$_POST['preg9']:NULL);
-$preg[] = (isset($_POST['preg10'])?$_POST['preg10']:NULL);
-*/
 $respDada[0] = (isset($_POST['0'])?$_POST['0']:NULL);
 $respDada[] = (isset($_POST['1'])?$_POST['1']:NULL);
 $respDada[] = (isset($_POST['2'])?$_POST['2']:NULL);
 $respDada[] = (isset($_POST['3'])?$_POST['3']:NULL);
 $respDada[] = (isset($_POST['4'])?$_POST['4']:NULL);
 $respDada[] = (isset($_POST['5'])?$_POST['5']:NULL);
-/*
-$respDada[] = (isset($_POST['6'])?$_POST['6']:NULL);
-$respDada[] = (isset($_POST['7'])?$_POST['7']:NULL);
-$respDada[] = (isset($_POST['8'])?$_POST['8']:NULL);
-$respDada[] = (isset($_POST['9'])?$_POST['9']:NULL);
-*/
 if(!$preg||!$respDada){
     echo "<p>Acceso invalido</p>";
 }
